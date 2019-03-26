@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- LOAD JQUERY LIBRARY -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+	<!-- LOADING FONTS AND ICONS -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" property="stylesheet" type="text/css"
+	 media="all">
+
+
+
+	<title>BookiePro</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font Awesome CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+	<!-- Main Styles CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="css/settings.css">
+	<!-- REVOLUTION LAYERS STYLES -->
+	<style></style>
+	<!-- REVOLUTION JS FILES -->
+	<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+
+
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+	<script type="text/javascript" src="js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="js/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript" src="js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="js/extensions/revolution.extension.video.min.js"></script>
+
+
+	<script type="text/javascript">
+		function setREVStartSize(e) {
+			try {
+				e.c = jQuery(e.c);
+				var i = jQuery(window).width(),
+					t = 9999,
+					r = 0,
+					n = 0,
+					l = 0,
+					f = 0,
+					s = 0,
+					h = 0;
+				if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
+						f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+					}), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] ||
+					e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+					var u = (e.c.width(), jQuery(window).height());
+					if (void 0 != e.fullScreenOffsetContainer) {
+						var c = e.fullScreenOffsetContainer.split(",");
+						if (c) jQuery.each(c, function (e, i) {
+								u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+							}), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ?
+							u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset
+							.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+					}
+					f = u
+				} else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+				e.c.closest(".rev_slider_wrapper").css({
+					height: f
+				})
+			} catch (d) {
+				console.log("Failure at Presize of Slider:" + d)
+			}
+		};
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="navigation">
+							<nav class="navbar navbar-default">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+									 aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/bookie_pro_logo.png" alt="" /></a>
+								</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<ul class="nav navbar-nav">
+										<li class="nav-item"><a class="nav-link" href="getting_started.html">GETTING STARTED</a></li>
+										<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+										<li class="nav-item"><a class="nav-link" href="community.html">COMMUNITY</a></li>
+									</ul>
+									<div class="header-search navbar-right dasktop-search">
+										<a href="http://www.bookiepro.fun/download">DOWNLOAD HERE</a><span>Available on Windows &amp; Mac</span>
+									</div>
+								</div><!-- /.navbar-collapse -->
+							</nav>
+							<div class="mobail-button">
+								<div class="header-search">
+									<a href="http://www.bookiepro.fun/download">DOWNLOAD HERE</a><span>Available on Windows &amp; Mac</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Ends-->
+		<!--Content Begins-->
+		<main class="main-contant">
+			<!--SLIDER SECTION STARTS-->
+			<section class="slider">
+				<div id="rev_slider_6_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="bookie_fun_slider"
+				 data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+					<!-- START REVOLUTION SLIDER 5.4.7.1 fullwidth mode -->
+					<div id="rev_slider_6_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7.1">
+						<ul>
+							<!-- SLIDE  -->
+							<li data-index="rs-16" data-transition="notransition" data-slotamount="default" data-hideafterloop="0"
+							 data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default"
+							 data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+							 data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
+							 data-description="">
+								<!-- MAIN IMAGE -->
+								<img src="assets/13669-desktop_slider_new.jpg" alt="" data-bgposition="center top" data-bgfit="cover"
+								 data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+								<!-- LAYERS -->
+
+								<!-- LAYER NR. 1 -->
+								<div class="tp-caption   tp-resizeme" id="slide-16-layer-28" data-x="['center','center','center','center']"
+								 data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['41','41','40','21']"
+								 data-fontsize="['45','45','45','35']" data-lineheight="['45','45','45','35']" data-width="none" data-height="none"
+								 data-whitespace="nowrap" data-visibility="['off','off','on','on']" data-type="text" data-responsive_offset="on"
+								 data-frames='[{"delay":10,"speed":500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+								 data-textAlign="['inherit','inherit','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+								 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 45px; line-height: 45px; font-weight: 700; color: #fbae16; letter-spacing: 0px;font-family:Open Sans;text-align:center;">THE
+									WORLD'S<br />BETTING EXCHANGE </div>
+
+								<!-- LAYER NR. 2 -->
+								<h1 class="tp-caption   tp-resizeme" id="main_text_headline" data-x="['left','left','center','center']"
+								 data-hoffset="['20','20','0','0']" data-y="['top','top','top','top']" data-voffset="['112','112','0','455']"
+								 data-fontsize="['65','55','29','29']" data-lineheight="['64','55','22','22']" data-color="['rgb(251,174,22)','rgb(251,174,22)','rgb(255,255,255)','rgb(255,255,255)']"
+								 data-width="['none','none','none','724']" data-height="['none','none','none','33']" data-whitespace="nowrap"
+								 data-visibility="['on','on','off','off']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":10,"speed":500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeIn"},{"delay":"wait","speed":0,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+								 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+								 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 65px; line-height: 64px; font-weight: 700; color: #fbae16; letter-spacing: 0px;font-family:Open Sans;">THE
+									WORLD'S<br />BETTING EXCHANGE </h1>
+
+								<!-- LAYER NR. 5 -->
+								<div class="tp-caption   tp-resizeme" id="slide-16-layer-24" data-x="['right','right','center','center']"
+								 data-hoffset="['173','18','0','1']" data-y="['top','top','top','top']" data-voffset="['186','190','350','273']"
+								 data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
+								 data-frames='[{"delay":820,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+								 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+								 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;"><img src="assets/cc28a-laptop.png"
+									 alt="" data-ww="['434px','434px','434px','434px']" data-hh="['272px','272px','272px','272px']" data-no-retina>
+								</div>
+
+								<!-- LAYER NR. 7 -->
+								<div class="tp-caption   tp-resizeme" id="slide-16-layer-26" data-x="['right','right','center','center']"
+								 data-hoffset="['151','4','-139','-90']" data-y="['top','top','top','top']" data-voffset="['437','426','558','422']"
+								 data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
+								 data-frames='[{"delay":1690,"speed":500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+								 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+								 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11;"><img src="assets/6f966-laptop_msg.png"
+									 alt="" data-ww="" data-hh="" data-no-retina> </div>
+
+								<!-- LAYER NR. 8 -->
+								<div class="tp-caption   tp-resizeme" id="slide-16-layer-23" data-x="['left','left','center','center']"
+								 data-hoffset="['20','20','0','0']" data-y="['top','top','bottom','bottom']" data-voffset="['409','409','40','30']"
+								 data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-actions='[{"event":"click","action":"simplelink","target":"_blank","url":"http://www.bookiepro.fun/download","delay":""}]'
+								 data-responsive_offset="on" data-frames='[{"delay":2090,"speed":400,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+								 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+								 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;">
+									<div class="rs-looped rs-pulse" data-easing="" data-speed="2" data-zoomstart="0.9" data-zoomend="1"><img src="assets/195f7-download_btn.png"
+										 alt="" data-ww="" data-hh="" data-no-retina> </div>
+								</div>
+
+							</li>
+						</ul>
+						<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+					</div>
+				</div><!-- END REVOLUTION SLIDER -->
+			</section>
+			<!--SLIDER SECTION ENDS-->
+			<section class="bookie_tips">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 pd_0 bookie_pros desktop">
+							<img class="img-responsive desktop" src="images/betslip_pros.png" alt="">
+						</div>
+						<div class="col-md-6 pd_0 bookie_info">
+							<img class="img-responsive" src="images/bookie_pros_logo.png" alt="">
+							<p class="subtext">Place bets with play money, learn while you play</p>
+							<!--ICONS DESKTOP STARTS-->
+							<div class="desktop_bookie_tips_list">
+								<table>
+									<tr>
+										<td class="table_icons_left"><span class="list_icon"><img src="images/icon_1.png" alt=""></span></td>
+										<td><span class="list_text">Bet with BitFun<br />Play Money</span></td>
+										<td class="table_icons"><span class="list_icon"><img src="images/icon_2.png" alt=""></span></td>
+										<td><span class="list_text">Many Sports to Bet On</span></td>
+									</tr>
+									<tr>
+										<td class="table_icons_left"><span class="list_icon"><img src="images/icon_3.png" alt=""></span></td>
+										<td><span class="list_text">Back Betting</span></td>
+										<td class="table_icons"><span class="list_icon"><img src="images/icon_4.png" alt=""></span></td>
+										<td><span class="list_text">Provably Fair</span></td>
+									</tr>
+									<tr>
+										<td class="table_icons_left"><span class="list_icon"><img src="images/icon_5.png" alt=""></span></td>
+										<td><span class="list_text">Lay Betting</span></td>
+										<td class="table_icons"><span class="list_icon"><img src="images/icon_6.png" alt=""></span></td>
+										<td><span class="list_text">Fully Decentralized<br />on Blockchain</span></td>
+									</tr>
+								</table>
+							</div>
+							<!--ICONS DESKTOP ENDS-->
+
+
+							<!--ICONS MOBILE STARTS-->
+							<ul class="mobile_bookie_tips_list">
+								<li><span class="list_icon"><img src="images/icon_1.png" alt=""></span><span class="list_text">Bet with BitFun<br />Play
+										Money</span></li>
+								<li class="list_float_right"><span class="list_icon"><img src="images/icon_2.png" alt=""></span><span class="list_text single_line">Win
+										Real Bitcoin</span></li>
+								<li><span class="list_icon"><img src="images/icon_3.png" alt=""></span><span class="list_text single_line">Back
+										Betting</span></li>
+								<li class="list_float_right"><span class="list_icon"><img src="images/icon_4.png" alt=""></span><span class="list_text single_line">Provably
+										Fair</span></li>
+								<li><span class="list_icon"><img src="images/icon_5.png" alt=""></span><span class="list_text single_line">Lay
+										Betting</span></li>
+								<li class="list_float_right"><span class="list_icon"><img src="images/icon_6.png" alt=""></span><span class="list_text">Fully
+										Decentralized
+										<br />on Blockchain</span></li>
+							</ul>
+							<!--ICONS MOBILE ENDS-->
+						</div>
+						<div class="col-md-6 pd_0 bookie_pros mobile">
+							<img class="img-responsive mobile" src="images/betslip_pros_mobile.png" alt="">
+						</div>
+						<div class="col-md-12 pd_0">
+							<div class="bookie_statement">... will make the disruption betting exchanges caused to gambling and racing seem
+								like nothing <a href="https://www.racingpost.com/news/technology-that-could-revolutionise-gambling-and-change-the-world/285183"
+								 target="_blank"><span>Racing Post</span></a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bookie_ad_section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 pd_0 bookie_ad_content">
+							<h1>What are you waiting for?</h1>
+							<p><a href="http://www.bookiepro.fun/download">START  Playing now</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!--Content Ends-->
+		<!--Footer Starts-->
+		<div class="footer-container">
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="footer-inner">
+								<p><img src="images/bookie_pro_footer_logo.png" alt=""></p>
+								<p class="social_media">
+									<a href="#"><img src="images/social_media_icon_1.png" alt=""></a>
+									<a href="#"><img src="images/social_media_icon_2.png" alt=""></a>
+									<a href="#"><img src="images/social_media_icon_3.png" alt=""></a>
+									<a href="#"><img src="images/social_media_icon_4.png" alt=""></a>
+								</p>
+								<p class="site_links">
+									<a href="/">Home</a> |
+									<a href="/about_us">About</a> |
+									<a href="/faq">FAQ</a> |
+									<a href="/download">DOWNLOAD</a> |
+									<a href="/getting_started">Getting Started</a> |
+									<!-- <a href="/competitions">Competitions</a> | -->
+									<a href="/assets/policy.pdf" target="_blank">Privacy</a>
+								</p>
+								<p class="privacy">
+									Your privacy is important to us. Your email address is used for notification and updating purposes only and
+									you may opt-out at anytime. We will not share your information with third party companies.</p>
+								<p><a href="https://www.peerplays.com/" target="_blank"><img src="images/peer_plays_logo.png" alt=""></a></p>
+								<p class="site_links">
+									© 2019 BookiePro
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		var revapi6,
+			tpj;
+		(function () {
+			if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad)
+			else
+				onLoad();
+
+			function onLoad() {
+				if (tpj === undefined) {
+					tpj = jQuery;
+
+					if ("off" == "on") tpj.noConflict();
+				}
+				if (tpj("#rev_slider_6_1").revolution == undefined) {
+					revslider_showDoubleJqueryError("#rev_slider_6_1");
+				} else {
+					revapi6 = tpj("#rev_slider_6_1").show().revolution({
+						sliderType: "standard",
+						jsFileLocation: "//www.casino01.com/revslider/revslider/public/assets/js/",
+						sliderLayout: "fullwidth",
+						dottedOverlay: "none",
+						delay: 9000,
+						navigation: {
+							onHoverStop: "on",
+						},
+						responsiveLevels: [1240, 1024, 778, 480],
+						visibilityLevels: [1240, 1024, 778, 480],
+						gridwidth: [1280, 1024, 767, 482],
+						gridheight: [612, 612, 900, 730],
+						lazyType: "none",
+						shadow: 0,
+						spinner: "spinner0",
+						stopLoop: "off",
+						stopAfterLoops: -1,
+						stopAtSlide: -1,
+						shuffle: "off",
+						autoHeight: "off",
+						disableProgressBar: "on",
+						hideThumbsOnMobile: "off",
+						hideSliderAtLimit: 0,
+						hideCaptionAtLimit: 0,
+						hideAllCaptionAtLilmit: 0,
+						debugMode: false,
+						fallbacks: {
+							simplifyAll: "off",
+							nextSlideOnWindowFocus: "off",
+							disableFocusListener: false,
+						}
+					});
+				}; /* END OF revapi call */
+			}; /* END OF ON LOAD FUNCTION */
+		}()); /* END OF WRAPPING FUNCTION */
+	</script>
+
+</body>
+
+</html>
+<!--Footer Ends-->

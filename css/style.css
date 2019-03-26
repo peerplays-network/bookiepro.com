@@ -1,0 +1,914 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+/*FONTS*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-weight: 400;
+    background-color:#000;
+  color:#fff; 
+}
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ol ol.lower_alpha li {
+    list-style: lower-alpha;
+}
+
+a, button {
+    transition: 0.5s all ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+}
+
+a:focus, a:hover, a:active {
+    outline: 0;
+    box-shadow: none;
+    transition: 0.5s all ease-in-out;
+    text-decoration: none;
+}
+button:focus{
+    outline: 0;
+}
+.child-pernt {
+    display: table;
+    height: 100%;
+    width: 100%; 
+}
+
+.child {
+    display: table-cell;
+    vertical-align: middle; 
+}
+.pd_0{
+    padding: 0 8px;
+}
+.wrapper{
+    overflow: hidden;
+}
+.container-fluid{
+    max-width: 1280px;
+}
+
+/*===== Custom Css =======*/
+.header{
+    background-color: #171c20;
+    padding: 0 12px;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.55);
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.55);
+}
+
+.landing {
+  background:URL("../assets/football-player-full.png") no-repeat top center fixed;
+  min-height:100%;
+  background-size:cover;
+}
+
+.landing .header {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(251, 174, 22);
+    letter-spacing: 0px;
+    font-family: "Open Sans";
+    margin: 40px 0 0 0;
+    padding: 0px;
+    text-align: right;
+}
+
+.landing h1 {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 58px;
+}
+
+.landing h2 {
+  font-size: 23px;
+  line-height: 1.48;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+
+.navigation .navbar-default {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+.navigation .navbar-brand {
+    float: left;
+  font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: inherit;
+  font-weight:700;
+    line-height: 20px;
+    padding-top:32px;
+  padding-bottom:32px;
+    margin-right: 0 !important;
+  padding-left: 0px;
+}
+.navigation .navbar {
+    border: medium none;
+    margin-bottom: 0;
+    border-radius: 0;
+    min-height: inherit;
+    position: relative;
+}
+.navigation .navbar-collapse{
+    padding: 0;
+}
+
+.navigation .navbar-right {
+    float: right;
+    margin-right: 0;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.header-search{
+  display: block;
+  float:right;
+  padding: 18px 0;
+}
+
+.header-search a{
+    background: #f20930;
+  background-image: -webkit-linear-gradient(top, #f20930, #b70926);
+  background-image: -moz-linear-gradient(top, #f20930, #b70926);
+  background-image: -ms-linear-gradient(top, #f20930, #b70926);
+  background-image: -o-linear-gradient(top, #f20930, #b70926);
+  background-image: linear-gradient(to bottom, #f20930, #b70926);
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0px 2px 2px #13171b;
+  -moz-box-shadow: 0px 2px 2px #13171b;
+  box-shadow: 0px 2px 2px #13171b;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 19px;
+  padding: 12px 19px 12px 19px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;	
+}
+
+.header-search a:hover{
+  background: #fbae16;
+  background-image: -webkit-linear-gradient(top, #b70926, #f20930);
+  background-image: -moz-linear-gradient(top, #b70926, #f20930);
+  background-image: -ms-linear-gradient(top, #b70926, #f20930);
+  background-image: -o-linear-gradient(top, #b70926, #f20930);
+  background-image: linear-gradient(to bottom, #b70926, #f20930);
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.5s ease-in-out;	
+}
+
+.header-search span{
+  font-size: 9px;
+    color: #828384;
+    display: block;
+    clear: both;
+    margin-top: 15px;
+}
+  
+.navbar-nav {
+  margin-top:20px;
+}
+
+/*.navigation .navbar-nav li:first-child a{
+    border-left: 1px solid #000; 
+}*/
+
+li.nav-item{
+      padding: 20px 15px;
+}
+
+.navigation .navbar-nav li a{
+    color: #ffffff;
+    font-size: 16px;
+  font-weight:600;
+    padding: 18px 17px;
+    position: relative;
+  border:0px;
+}
+
+.navigation .navbar-nav li a:hover,
+.navigation .navbar-default .navbar-nav > .open > a,
+.navigation .navbar-default .navbar-nav > .open > a:focus,
+.navigation .navbar-default .navbar-nav > .open > a:hover {
+  border-bottom: 8px solid #fbae16;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.navigation .navbar-nav li a:focus{
+  border-bottom: 8px solid #fbae16;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.orange_hi_light a{
+  background: #fbae16 !important;
+    color: #171c20 !important;
+  border-bottom: 0px solid #fbae16 !important;
+}
+
+.orange_hi_light a:hover{
+  background: #fbae16 !important;
+    color: #171c20 !important;
+  border-bottom: 0px solid #fbae16 !important;
+  padding-bottom: 18px !important;
+}
+
+.navigation .navbar-nav > li > .dropdown-menu {
+  background: #0d1a36;
+    color: #ffffff;
+}
+
+.navigation .navbar-nav > li > .dropdown-menu  a {
+  padding: 15px 11px;
+  font-family: 'bebas_neueregular';
+  font-size: 18px;
+  display: block;
+  border: none;
+  border-top: 1px solid #202f59;
+}
+
+.navigation .navbar-nav > li > .dropdown-menu  a:first-child {
+  border-top: none;
+}
+
+.navigation .navbar-nav > li > .dropdown-menu  a:hover {
+  background: #202f59;
+}
+
+.mobail-button{
+    display: none;
+}
+
+.nav-link.active{border-bottom: 8px solid #fbae16 !important; padding-bottom: 9px !important;}
+
+/*SLIDER*/
+  .slider{
+    margin-left:-15px;
+    margin-right:-15px;
+    border-bottom:8px solid #3e5262;
+  }
+  .slider_mobile{
+    display:none;
+  }
+/*SLIDER*/
+
+/*BOOKIE TIPS*/
+.bookie_tips{
+  background-image: URL("../images/bookie_tips_bg.jpg");
+  margin-left:-15px;
+  margin-right:-15px;
+  padding:60px 15px;
+  border-bottom:8px solid #3e5262;
+  background-color:#181f27;
+  background-repeat: no-repeat;
+}
+
+.bookie_pros{
+  text-align: center;
+}
+
+.bookie_pros img{
+  display: inline-block;
+} 
+
+.bookie_info{
+  text-align: center;
+}
+
+.bookie_info img{
+display: inline-block;
+}
+
+.subtext{
+  font-size:20px;
+  font-weight:600;
+  margin-top:20px;
+  margin-bottom:40px;
+}
+
+.list_icon{
+  float:left;
+  display:inline-block;
+  margin-right:10px;
+  vertical-align: middle;
+}
+
+.list_text{
+  line-height:22px;
+  font-size:18px;
+  color:#fff;
+  float:left;
+  display:inline-block;
+  text-align: left;
+}
+
+.list_text.single_line{
+  padding-top:14px;
+}
+
+.bookie_info li{
+  float:left;
+  display: block;
+  width:100%;
+  margin-bottom:30px;
+}
+
+.icons_left{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.icons_right{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.desktop_bookie_tips_list {
+    display: block;
+    margin: 0 auto;
+  width:90%;
+  padding-left:25px;
+}
+
+.mobile_bookie_tips_list{
+  display:none;
+}
+
+.bookie_pros.desktop{
+  display: block;
+}
+
+.bookie_pros.mobile{
+  display: none;
+}
+
+.desktop_bookie_tips_list td{
+  padding-bottom:38px;
+}
+
+.desktop_bookie_tips_list .table_icons{
+  padding-left:50px;
+}
+
+.sweepstakes-table {
+  margin: 0 auto 15px;
+}
+.sweepstakes-table td,
+.sweepstakes-table th {
+  padding: 5px;
+}
+
+.desktop_bookie_tips_list table{
+    margin:0 auto;
+      width: 100%;
+}
+
+.table_icons, .table_icons_left{
+  width:48px;
+}
+
+.bookie_statement{
+  text-align:center;
+  font-size:21px;
+  font-style: italic;
+  padding:17px 30px;
+  background-color:#171d22;
+  border:1px solid #34424c;
+  width:90%;
+  margin:0 auto;
+  margin-top:30px;
+  font-weight:300;
+  display: block;
+}
+
+.bookie_statement span{
+  color:#fbae16;
+  font-weight:600;
+}
+
+/*BOOKIE TIPS*/
+/*WHITEPAPER DOWNLOAD*/
+
+.whitepaper_download{
+  background-image: URL("../assets/13669-desktop_slider_new.jpg");
+  margin-left:-15px;
+  margin-right:-15px;
+  padding:60px 15px;
+  border-bottom:8px solid #3e5262;
+  background-color:#181f27;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+
+.tag-line {
+  display: block;
+  color: #fff;
+  font-size:48px;
+  font-weight:700;
+  letter-spacing:0.5px;
+  line-height:56px;
+  margin-bottom:48px;
+  text-align:left;
+}
+
+.dark_container, .dark_container_short {
+  background-color: rgba(13, 17, 21, 0.7);
+  display: block;
+  margin: 0 auto 24px;
+  padding: 24px;
+}
+
+.dark_container_short {
+  margin-bottom: 90px;
+}
+
+form.validate {
+  display: block;
+}
+
+.text_input_row {
+  float: left;
+  margin-bottom: 18px;
+}
+
+.text_input_row .mc-field-group {
+  float: left;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.mc-field-group:last-of-type {
+  margin-right: 0;
+}
+
+.mc-field-group label {
+  display: block;
+  font-size: 14px;  
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+  text-transform:  uppercase;
+  width: 100%;
+}
+
+.input-group label {
+  font-weight: 300;
+  text-transform: none;
+}
+
+.input-group input[type=checkbox] {
+  border-radius: 2px;
+  display: block;
+  float: left;
+  margin: 0 8px 18px 8px;
+}
+
+.input-group input[type=radio] {
+  display: block;
+  float: left;
+  margin: 0 8px 0 8px;
+}
+
+.form_field {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #495967;
+  color: #0D1115;
+  font-size: 16px;
+  padding: 13px;
+  width: 100%;
+}
+
+.form_field:focus {
+  border: 1px solid #FBB716;
+}
+
+.download_btn{
+  background: #f20930;
+  background-image: -webkit-linear-gradient(top, #f20930, #b70926);
+  background-image: -moz-linear-gradient(top, #f20930, #b70926);
+  background-image: -ms-linear-gradient(top, #f20930, #b70926);
+  background-image: -o-linear-gradient(top, #f20930, #b70926);
+  background-image: linear-gradient(to bottom, #f20930, #b70926);
+  border-width: 0;
+  display: block;
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0px 2px 2px #13171b;
+  -moz-box-shadow: 0px 2px 2px #13171b;
+  box-shadow: 0px 2px 2px #13171b;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 19px;
+  margin: 20px auto 0;
+  padding: 12px 19px 12px 19px;
+  text-decoration: none;
+}
+
+.download_btn:hover{
+  background: #fbae16;
+  background-image: -webkit-linear-gradient(top, #b70926, #f20930);
+  background-image: -moz-linear-gradient(top, #b70926, #f20930);
+  background-image: -ms-linear-gradient(top, #b70926, #f20930);
+  background-image: -o-linear-gradient(top, #b70926, #f20930);
+  background-image: linear-gradient(to bottom, #b70926, #f20930);
+  text-decoration: none;
+  color:#fff;
+}
+
+.whitepaper_download h3 {
+  color: #FBB716;
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 12px;
+}
+
+h3.confirmation_message {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.whitepaper_download p,
+.whitepaper_download ul {
+  margin: 0 auto 16px;
+}
+
+.whitepaper_download li {
+  list-style: circle;
+  font-weight: 700;
+  margin: 0 0 12px 12px;
+}
+
+.dot_input_row {
+  display: block;
+}
+/*WHITEPAPER DOWNLOAD*/
+
+/*BOOKIE AD*/
+.bookie_ad_section{
+  background-image: URL("../images/section_stripe_tile.png");
+  margin-left:-15px;
+  margin-right:-15px;
+  padding:60px 15px;
+  background-color:#181f27;
+  text-align: center;
+  background-repeat: repeat;
+}
+
+.bookie_ad_section h1{
+  font-size: 40px;
+  font-weight:600;
+  margin-bottom:30px;
+}
+
+.bookie_ad_section a{
+  background: #f20930;
+  background-image: -webkit-linear-gradient(top, #f20930, #b70926);
+  background-image: -moz-linear-gradient(top, #f20930, #b70926);
+  background-image: -ms-linear-gradient(top, #f20930, #b70926);
+  background-image: -o-linear-gradient(top, #f20930, #b70926);
+  background-image: linear-gradient(to bottom, #f20930, #b70926);
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0px 2px 2px #13171b;
+  -moz-box-shadow: 0px 2px 2px #13171b;
+  box-shadow: 0px 2px 2px #13171b;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  padding: 12px 19px 12px 19px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;	
+  text-transform: uppercase;
+  display:inline-block;
+}
+
+.bookie_ad_section a:hover{
+  background: #fbae16;
+  background-image: -webkit-linear-gradient(top, #b70926, #f20930);
+  background-image: -moz-linear-gradient(top, #b70926, #f20930);
+  background-image: -ms-linear-gradient(top, #b70926, #f20930);
+  background-image: -o-linear-gradient(top, #b70926, #f20930);
+  background-image: linear-gradient(to bottom, #b70926, #f20930);
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.5s ease-in-out;	
+  
+}
+
+/*BOOKIE AD*/
+
+/*BOOKIE CONTENT*/
+.bookie_bg{
+  background-image: url("../images/bookie_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+}
+.content_section{
+  color:#171c20;
+}
+
+.bookie_text_content{
+  background-color: #fff;
+  padding-top:55px;
+  padding-bottom:55px;
+  font-size:18px;
+  font-weight: 300;
+  padding-left:20%;
+  padding-right:20%;
+}
+
+.bookie_text_content h1{
+  font-size:28px;
+  margin-bottom:30px;
+  margin-top:0px;
+  color:#fbae16;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bookie_text_content h2{
+  font-size:22px;
+  margin-bottom:30px;
+  margin-top:30px;
+  color:#171c20;
+  font-weight:700;
+}
+
+.bookie_text_content p{
+  margin-bottom:30px;
+  margin-top:30px;
+  line-height: 26px;
+}
+
+.bookie_text_content hr{
+  border-top:1px solid #171c20; 
+}
+
+.bookie_text_content a{
+  color:#171c20;
+  text-decoration: underline;
+  font-weight:700;
+  transition: none;
+}
+
+.bookie_text_content a:hover {
+  color: #fbae16;
+}
+
+a.download-btn {
+  background: #f20930;
+  background-image: -webkit-linear-gradient(top, #f20930, #b70926);
+  background-image: -moz-linear-gradient(top, #f20930, #b70926);
+  background-image: -ms-linear-gradient(top, #f20930, #b70926);
+  background-image: -o-linear-gradient(top, #f20930, #b70926);
+  background-image: linear-gradient(to bottom, #f20930, #b70926);
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0px 2px 2px #13171b;
+  -moz-box-shadow: 0px 2px 2px #13171b;
+  box-shadow: 0px 2px 2px #13171b;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; 
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 6px 10px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;	
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  max-width: 50%;
+  width: auto;
+}
+
+a.download-btn:hover {
+  background: #fbae16;
+  background-image: -webkit-linear-gradient(top, #b70926, #f20930);
+  background-image: -moz-linear-gradient(top, #b70926, #f20930);
+  background-image: -ms-linear-gradient(top, #b70926, #f20930);
+  background-image: -o-linear-gradient(top, #b70926, #f20930);
+  background-image: linear-gradient(to bottom, #b70926, #f20930);
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.5s ease-in-out;	
+}
+
+.bookie_text_content ol{
+  margin-left:10px;
+  margin-top:0px;
+}
+.bookie_text_content ol li{
+  list-style-type:decimal;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.bookie_text_content .alpha{
+  list-style-type: upper-alpha;
+}
+
+
+.bookie_ad_section_inner{
+  background-image: URL("../images/section_stripe_tile.png");
+  padding:60px 15px;
+  background-color:#181f27;
+  text-align: center;
+  background-repeat: repeat;
+}
+
+.bookie_ad_section_inner h1{
+  font-size: 40px;
+  font-weight:600;
+  margin-bottom:30px;
+}
+
+.bookie_ad_section_inner a{
+  background: #f20930;
+  background-image: -webkit-linear-gradient(top, #f20930, #b70926);
+  background-image: -moz-linear-gradient(top, #f20930, #b70926);
+  background-image: -ms-linear-gradient(top, #f20930, #b70926);
+  background-image: -o-linear-gradient(top, #f20930, #b70926);
+  background-image: linear-gradient(to bottom, #f20930, #b70926);
+  text-shadow: 1px 1px 3px #666666;
+  -webkit-box-shadow: 0px 2px 2px #13171b;
+  -moz-box-shadow: 0px 2px 2px #13171b;
+  box-shadow: 0px 2px 2px #13171b;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  padding: 12px 19px 12px 19px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;	
+  text-transform: uppercase;
+  display:inline-block;
+}
+
+.bookie_ad_section_inner a:hover{
+  background: #fbae16;
+  background-image: -webkit-linear-gradient(top, #b70926, #f20930);
+  background-image: -moz-linear-gradient(top, #b70926, #f20930);
+  background-image: -ms-linear-gradient(top, #b70926, #f20930);
+  background-image: -o-linear-gradient(top, #b70926, #f20930);
+  background-image: linear-gradient(to bottom, #b70926, #f20930);
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.5s ease-in-out;	
+}
+
+/*BOOKIE CONTENT*/
+
+.download-container {
+  border-top: 8px solid #3e5262;
+}
+
+/*===== footer Css =======*/
+.footer-container {
+  background-color: #171c20;
+  padding: 30px 0;
+  border-top: 8px solid #3e5262;
+}
+.footer{
+    text-align: center;
+    color: #767879;
+}
+.footer-inner p {
+    font-size: 11px;
+    margin: 10px auto 18px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.footer-inner .social_media img{
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.footer-inner .site_links a{
+  font-size:14px;
+  font-weight:bold;
+  color:#7b7d7e;
+}
+
+.footer-inner .site_links a:hover{
+  color:#fff;
+}
+.footer-container .col-md-12{
+  padding-right: 15px;
+    padding-left: 15px;
+} 
+
+.landing footer {
+  margin-top: 240px;
+  text-align: center;
+}
+
+.footer-icon-twitter,
+.footer-icon-facebook,
+.footer-icon-reddit,
+.footer-icon-steemit,
+.footer-icon-telegram {
+  display: inline-block;
+  height: 36px;
+  margin: 0 10px;
+  width: 36px;
+}
+
+.footer-icon-twitter {
+  background: URL("../assets/twitter-icon.svg") no-repeat;
+}
+
+.footer-icon-facebook {
+  background: URL("../assets/facebook-icon.svg") no-repeat;
+}
+
+.footer-icon-reddit {
+  background: URL("../assets/reddit-icon.svg") no-repeat;
+}
+
+.footer-icon-steemit {
+  background: URL("../assets/steemit-icon.svg") no-repeat;
+}
+
+.footer-icon-telegram {
+  background: URL("../assets/telegram-icon.svg") no-repeat;
+}
+
+
+/*===== Mailchimp form Css =======*/
+.signup-form {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.signup-form label {
+  font-weight: 400;
+}
+
+.signup-form .email,
+.signup-form .button {
+  border-radius: 2px;
+  border: none;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+}
+
+.signup-form .email {
+  color: #13171b;
+  max-width: 300px;
+  
+}
+
+.signup-form .button {
+  background-color: #FBAE16;
+  font-weight: 700;
+  text-transform: uppercase;
+  max-width: 150px;
+}
+
+.signup-form .button:hover {
+  background-color: #c98b12;
+}
+
+/*UTILITY CLASSES*/
+
+.u-text-center {
+  text-align: center;
+}
+

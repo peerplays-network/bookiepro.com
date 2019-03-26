@@ -1,0 +1,462 @@
+@media (max-width: 1290px) {
+    .header-search .form-group:first-child,
+    .header-search .form-group:nth-child(2){
+        display: none;
+    }
+	li.nav-item {
+    padding: 10px 10px;
+	}
+	.navigation .navbar-brand {
+    padding-top: 22px;
+    padding-bottom: 22px;
+	}
+	.header-search {
+    padding: 0px 0;
+	}
+	.navigation .navbar-right {
+    margin-top: 37px;
+    }
+    .signup-form {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+    .signup-form .email {
+        max-width: 300px;
+    }
+    .signup-form .button {
+        max-width: 150px;
+    }
+}
+@media (max-width: 1199px) {
+    .navigation .navbar-brand img {
+        max-width: 250px;
+    }
+	li.nav-item {
+    padding: 0px 10px;
+	}
+	.navigation .navbar-right {
+    margin-top: 28px;
+	}
+	.navigation .navbar-nav li a {
+    font-size: 14px;
+    padding: 18px 10px;
+	}
+    
+	.header-search a {
+    font-size: 16px;
+    }
+    .full-width-m {
+        float: none;
+        width: 100%;
+    }
+    .full-width-m .navbar-brand {
+        width: 100%;
+    }
+    .header h1 {
+        display: none;
+    }
+    .navbar-brand img.logo {
+        float: none;
+        margin: 0 auto;
+        max-width: none;
+    }
+	/*BOOKIE TIPS*/
+	.desktop_bookie_tips_list {
+    display: block;
+    margin: 0 auto;
+	width:100%;
+	}
+	.desktop_bookie_tips_list .table_icons {
+    padding-left: 10px;
+	}
+	.bookie_pros {
+    text-align: left;
+	}
+    /*BOOKIE TIPS*/
+    .signup-form {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+}
+@media (max-width: 991px) {
+	/*
+	body {
+		background-size: initial;
+		background-attachment: fixed;
+	}
+	*/
+    .navbar-header { 
+        float: none; 
+    }
+    .navbar-left,
+    .navbar-right { 
+        float: none !important;
+    }
+    .navbar-toggle { 
+        display: block; 
+    }
+    .navbar-fixed-top { 
+        top: 0; 
+        border-width: 0 0 1px; 
+    }
+    .navbar-collapse.collapse { 
+        display: none!important; 
+    }
+    .navbar-nav { 
+        float: none!important; 
+    }
+    .navbar-nav > li { 
+        float: none;
+    }
+    .collapse.in { 
+        display:block !important;
+    }
+    .navigation .navbar-brand img {
+    max-width: 250px;
+	}
+    .navigation .navbar-brand {
+        padding: 30px 10px 30px 0;
+    }
+    .navigation .navbar-toggle .icon-bar {
+        height: 6px;
+        width: 41px;
+    }
+    .navigation .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+        border-radius: 0;
+    }
+    .navigation .navbar-toggle{
+        border: medium none;
+        border-radius: 0;
+        left: 0;
+        margin: 0;
+        padding: 34px 10px;
+        position: absolute;
+        top: 0;
+    }
+    .navigation .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        background: transparent;
+    }
+    .navigation .navbar-brand {
+    padding: 20px 0 20px 70px;
+	}
+    .header-search a{
+        display: block;
+    }
+	.navbar-right.dasktop-search{
+		display:none;
+	}
+    .navigation .navbar-collapse{
+        position: absolute;
+        width: 100%;
+        z-index: 11;
+        background-size: cover;
+	    border-color: #000;
+		margin-top: -2px;
+    }
+	.navigation .nav-item.dropdown::before {
+		display: block;
+		content: "";
+		color: #98b1d6;
+		position: absolute;
+		right: 20px;
+		top: 14px;
+		font-size: 30px;
+		font-family: "FontAwesome";
+		z-index: 1;
+		-webkit-animation: 4s ;
+		-moz-animation: 4s  ;
+		animation: 4s  ;
+	}
+	.navigation .nav-item.dropdown.open::before {
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+	}
+	.navigation .nav-item.dropdown.open a.dropdown-toggle {
+		background: #314266;
+	}
+    .mobail-button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+    .mobail-button .header-search {
+    padding: 15px 0;
+    text-align: center;
+	}
+    .dasktop-search{
+        display: block;
+    }
+	.header-search span {
+    margin-top: 5px;
+	}
+	li.nav-item {
+    padding: 0px 0px;
+	}
+	.navbar-nav {
+    margin-top: 0px;
+	}
+    .navigation .navbar-nav li > a {
+		background: #27333d;
+        border-bottom: 1px solid #171c20;
+    }
+	.navigation .navbar-nav li > a:hover {
+		background: #fbae16;
+        border-bottom: 1px solid #171c20 !important;
+		padding-bottom:18px;
+		color: #171c20 !important;
+    }
+	.orange_hi_light a{
+		border-bottom: 1px solid #171c20 !important;
+	}
+	.orange_hi_light a:hover{
+		padding-bottom:18px !important;
+	}
+	.navigation .navbar-nav .open .dropdown-menu {
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		background-color: transparent;
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+    .navigation .navbar-nav li a::after{
+        display: none;
+    }
+    .main-contant {
+        padding: 0;
+    }
+	.desktop_bookie_tips_list{
+		width:70%;
+	}
+	
+	.bookie_tips {
+    	padding: 30px 15px;
+	}
+	/*BOOKIE TIPS*/
+	.bookie_pros.desktop{
+	display: none;
+	}
+
+	.bookie_pros.mobile{
+		display: block;
+	}
+	
+	.col-md-6.icons_left{
+		float:left;
+		width:50%;
+	}
+	
+	.col-md-6.icons_right{
+		float:right;
+		width:50%;
+	}
+	
+	.desktop_bookie_tips_list .table_icons {
+    padding-right: 0px;
+	}
+	.desktop_bookie_tips_list table {
+    margin: 0 auto;
+	width:100%;	
+	}
+	.desktop_bookie_tips_list {
+    padding-left: 0px;
+	}
+	td.table_icons_left {
+    padding-left: 11%;
+	}
+	.bookie_pros {
+    text-align: center;
+	}
+	/*BOOKIE TIPS*/
+	
+	/*BOOKIE CONTENT*/
+	.bookie_text_content{
+	padding-left: 5%;
+    padding-right: 5%;
+	}
+	/*BOOKIE CONTENT*/
+	
+	.nav-link.active {
+    border-bottom: 1px solid #171c20 !important;
+    padding: 18px 10px !important;
+	}
+	
+    .navigation {
+        margin: 0 -27px;
+    }
+    .signup-form {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+}
+@media (max-width: 767px) {
+    .header-search .form-group {
+        display: inline-block;
+        margin: 0 0 0 3px;
+    }
+    .navigation .navbar-brand img {
+        max-width: 203px;
+    }
+    .navigation .navbar-toggle {
+    padding: 28px 16px;
+	}
+   .navigation .navbar-brand {
+    padding: 20px 0 20px 75px;
+	}
+	.header-search a{
+    font-size: 16px;
+    padding: 9px 14px 9px 14px;
+	}
+	.mobail-button .header-search {
+    padding: 15px 0;
+	}
+	.desktop_bookie_tips_list {
+    display:none;
+	}
+	.mobile_bookie_tips_list {
+    display:block;
+	}
+	ul.mobile_bookie_tips_list {
+    margin: 0 auto;
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+		margin-left:10px;
+	}
+	.slider_mobile{
+		display:block;
+	}
+	.slider_desktop{
+		display:none;
+	}
+	
+    .pd_0 {
+        padding: 0 15px;
+    }
+    .navigation .navbar-nav {
+        margin: 0;
+    }
+    .signup-form {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+    
+}
+@media (max-width: 550px) {
+	.bookie_text_content{
+	padding-left: 5%;
+    padding-right: 5%;
+	font-size: 16px;
+	}
+	.bookie_text_content h1 {
+    font-size: 28px;
+	}
+	
+	.bookie_text_content h2 {
+    font-size: 20px;
+	}
+	
+    .footer-nav ul li {
+        display: inline-block;
+        float: none;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .footer-payment ul li {
+        display: inline-block;
+        float: none;
+        margin: 0 5px 5px;
+    }
+    .signup-form {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+}
+@media (max-width: 479px) {
+    .header-search .form-group .btn-defult{
+        padding: 5px;
+    }
+    .navigation .navbar-brand img {
+     max-width: 150px;
+	}
+    .navigation .navbar-toggle .icon-bar {
+        height: 4px;
+        width: 30px;
+    }
+    .navigation .navbar-toggle {
+        padding: 20px 12px;
+    }
+    .navigation .navbar-brand {
+    	padding: 15px 0 15px 55px;
+	}
+    .mobail-button .header-search {
+        padding: 11px 0;
+    }
+	.header-search a {
+		font-size: 13px;
+		padding: 5px 9px 5px 9px;
+	}
+    .navigation .navbar-toggle {
+    	padding: 21px 12px;
+    }
+    .signup-form {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+}
+@media (max-width: 420px) {
+
+    .landing h1 {
+        font-size: 26px;
+    }
+    .landing h2 {
+        font-size: 18px;
+        line-height: 1.4;
+        max-width: 80%;
+    }
+
+    .signup-form {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+
+    .landing footer {
+        margin-top: 100px;
+    }
+	
+	.text-inner-second a {
+		font-size: 14px;
+	}
+}
+@media (max-width: 379px) {
+    .navigation .navbar-brand img {
+        max-width: 115px;
+    }
+	.mobail-button .header-search {
+    	padding: 8px 0;
+	}
+    .navigation .navbar-toggle {
+    	padding: 16px 12px;
+	}
+    .header-search .form-group .btn-defult{
+        font-size: 10px;
+    }
+	
+	.header-search a {
+    font-size: 12px;
+    padding: 5px 7px 5px 7px;
+	}
+	.bookie_ad_section a{
+		font-size:22px;
+	}
+}
+
+
+
+
